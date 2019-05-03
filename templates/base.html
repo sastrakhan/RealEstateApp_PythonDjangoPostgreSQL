@@ -15,13 +15,14 @@
   <!-- Lightbox -->
   <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
 
-  <title>HomesForAll Real Estate</title>
+  <title>HomesForAll Real Estate {% block title %} {% endblock %}</title>
 </head>
 
 <body>
   <!-- Top Bar -->
   {% include 'partials/_topbar.html' %}
   <!-- NavBar -->
+  {% include 'partials/_navbar.html' %}
     <!-- Main Content -->
   {% block content %} {% endblock %}
   <!-- Footer -->
